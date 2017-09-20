@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #83aff7;
+}
+
+.login {
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.icon {
+  font-size: 900%;
+  position: relative;
+  top: 60px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 8px;
+  background-color: #d74bf2;
+  color: white;
+  border-radius: 5px;
+}
+
+.logo {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 8px;
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+}
+
+#slogan {
+  font-size: 28px;
+  position: relative;
+  top: 60px;
+  font-family: 'Pacifico', cursive;
+}
+
+.form {
+  font-size: 18px;
+}
+
+.submit {
+  cursor: pointer;
+  margin-left: 6px;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+.input {
+  margin-right: 5px;
+}
+
+.container {
+  border: 1px solid black;
+  padding: 60px;
+  margin-top: 100px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.icons {
+  font-size: 300%;
+  margin-top: 60px;
+}
+
+.fa-facebook-square,
+.fa-amazon {
+  margin-right: 40px;
+}
+
+.fa-facebook-square,
+.fa-amazon,
+.fa-rebel {
+  cursor: pointer;
+}

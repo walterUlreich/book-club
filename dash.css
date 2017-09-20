@@ -1,0 +1,304 @@
+.jumbotron {
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  background-color: #83aff7;
+  color: #fff;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.logo {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding: 8px;
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+}
+
+#slogan {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  position: absolute;
+  left: 100px;
+  top: -30px;
+}
+
+.book {
+  font-size: 400%;
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}
+
+.user {
+  font-size: 200%;
+  position: absolute;
+  right: 360px;
+  top: 60px;
+}
+
+.userName {
+  position: absolute;
+  right: 240px;
+  top: 70px;
+  font-size: 18px;
+}
+
+.logout {
+  position: absolute;
+  right: 160px;
+  top: 60px;
+  font-size: 200%;
+}
+
+.logoutText {
+  position: absolute;
+  right: 90px;
+  top: 70px;
+  font-size: 18px;
+}
+
+.logoutText a {
+  color: white;
+}
+
+.btn {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+
+.list-group {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.list-group a {
+  color: black;
+}
+
+.list-group a:hover {
+  text-decoration: none;
+}
+
+.purple {
+  background-color: #d74bf2;
+  color: white;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #d74bf2;
+  height: 140px;
+  margin-top: 40px;
+  border-top: 1px solid black;
+}
+
+.footer p {
+  font-size: 18px;
+  position: relative;
+  top: 46px;
+  color: #eee;
+  margin-bottom: 0;
+}
+
+.thumbnail a {
+  margin-top: 20px;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+
+.modal {
+  margin: 0 auto;
+}
+
+.modal-content {
+  padding: 5px;
+  width: 600px;
+}
+
+.modal-button {
+  position: relative;
+  right: 240px;
+}
+
+.card {
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.card-body p {
+  margin: 20px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+}
+
+#eventHR {
+  margin-bottom: 40px;
+  width: 600px;
+}
+
+#author {
+  margin-top: 100px;
+}
+
+#homeHR {
+  width: 600px;
+}
+
+#monthHR {
+  width: 600px;
+  margin-bottom: 40px;
+}
+
+#authorHR {
+  margin-bottom: 60px;
+  width: 600px;
+}
+
+#bio {
+  font-size: 20px;
+  width: 90%;
+}
+
+#listHR {
+  width: 800px;
+}
+
+.thumb {
+  font-size: 200%;
+  position: relative;
+  right: 40px;
+}
+
+.thumb p {
+  font-size: 24px;
+  position: absolute;
+  right: 80px;
+  top: 8px;
+}
+
+.thumb i:hover {
+  color: green;
+}
+
+.contact-form {
+  height: 420px;
+}
+
+.contact-form i {
+  margin-right: 5px;
+}
+
+#contactHR {
+  margin-bottom: 80px;
+  width: 600px;
+}
+
+.contact-form p {
+  font-size: 24px;
+  position: relative;
+  left: 40px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.table {
+  width: 94%;
+  margin-bottom: 40px;
+}
+
+.table th {
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+}
+
+.footerIcons {
+  font-size: 250%;
+  position: relative;
+  left: 440px;
+  top: 10px;
+}
+
+.footerIcons a {
+  margin-right: 20px;
+}
+
+#rsvp {
+  margin-right: 80px;
+}
+
+.input-group {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+#chatbox {
+  height: 38px;
+  margin: 0 auto;
+}
+
+.message {
+  list-style-type: none;
+  border: 1px solid black;
+  width: 320px;
+  padding: 12px;
+  padding-left: 20px;
+  border-radius: 12px;
+
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 1px #333;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  background-color: #cfdff9;
+  color: #444;
+  position: relative;
+  left: 60px;
+}
+
+.icon {
+  font-size: 240%;
+  position: absolute;
+  color: #444;
+}
+
+#chat-row {
+  min-height: 440px;
+}
+
+#chat-messages {
+  position: relative;
+  left: 40px;
+}
+
+#chatHR {
+  width: 600px;
+}
+
+.modal-footer {
+  padding-bottom: 0;
+}

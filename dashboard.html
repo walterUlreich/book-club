@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Project</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.3/vue-router.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dash.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div id="app">
+
+    <div class="jumbotron header">
+      <div class="row">
+        <div class="col-md-4">
+          <p id="slogan">Much Read! Very Books!</p>
+          <div class="book">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h1 class="logo text-center">Book Club</h1>
+        </div>
+        <div class="col-md-4">
+          <div class="user">
+            <i class="fa fa-user-circle-o" v-on:click="log" aria-hidden="true"></i>
+          </div>
+            <p class="userName">mrUnderhill</p>
+          <div class="logout">
+            <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+          </div>
+          <p class="logoutText"><a href="/index.html">log out</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <router-view v-bind:host="host"
+                 v-bind:road-votes="roadVotes"
+                 v-bind:cristo-votes="cristoVotes"
+                 v-bind:slaughter-votes="slaughterVotes"
+
+                 ></router-view>
+
+
+
+
+    <div class="footer text-center">
+      <p>Copyright &copy; 2017 | design by Walter Ulreich</p>
+      <div class="footerIcons text-center">
+        <a class="fa fa-facebook-square" aria-hidden="true"></a>
+        <a class="fa fa-amazon" aria-hidden="true"></a>
+        <a class="fa fa-rebel" aria-hidden="true"></a>
+      </div>
+    </div>
+
+    </div>
+
+
+
+
+    <!-- Modal List -->
+    <div class="modal fade modal-lg" id="adventuresModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">The Amazing Adventures of Kavalier and Clay</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: Michael Chabon</strong></p>
+            <p>The Amazing Adventures of Kavalier & Clay is a 2000 novel by Jewish American author Michael Chabon that won the Pulitzer Prize for Fiction in 2001. The novel follows the lives of two Jewish cousins, Czech artist Joe Kavalier and Brooklyn-born writer Sammy Clay, before, during, and after World War II. In the novel, Kavalier and Clay become major figures in the comics industry from its nascency into its Golden Age. Kavalier & Clay was published to "nearly unanimous praise" and became a New York Times Best Seller, receiving nominations for the 2000 National Book Critics Circle Award and PEN/Faulkner Award for Fiction. In 2006, Bret Easton Ellis declared the novel "one of the three great books of my generation," and in 2007, The New York Review of Books called the novel Chabon's magnum opus.</p>
+            <p><strong>Genre:</strong> Historical Fiction<br>
+               <strong>Published:</strong> September 19, 2000 by Random House</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Amazing-Adventures-Kavalier-bonus-content-ebook/dp/B0070O5F4U" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Amazing-Adventures-Kavalier-Clay/dp/0812983580/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="hobbitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">The Hobbit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: J.R.R. Tolkien</strong></p>
+            <p>The Hobbit, or There and Back Again is a children's fantasy novel by English author J. R. R. Tolkien. It was published on 21 September 1937 to wide critical acclaim, being nominated for the Carnegie Medal and awarded a prize from the New York Herald Tribune for best juvenile fiction. The book remains popular and is recognized as a classic in children's literature.
+
+            The Hobbit is set in a time "between the Dawn of Færie and the Dominion of Men", and follows the quest of home-loving hobbit Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon. Bilbo's journey takes him from light-hearted, rural surroundings into more sinister territory.</p>
+            <p><strong>Genre:</strong> Fantasy<br>
+               <strong>Published:</strong> September 21, 1937 by George Allen & Unwin, Ltd.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Hobbit-75th-Anniversary-J-R-R-Tolkien-ebook/dp/B007978NU6/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Hobbit-J-R-Tolkien/dp/054792822X" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="devilModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">The Devil in the White City</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: Erik Larson</strong></p>
+            <p>Erik Larson—author of #1 bestseller In the Garden of Beasts—intertwines the true tale of the 1893 World's Fair and the cunning serial killer who used the fair to lure his victims to their death. Combining meticulous research with nail-biting storytelling, Erik Larson has crafted a narrative with all the wonder of newly discovered history and the thrills of the best fiction.</p>
+            <p><strong>Genre:</strong> History<br>
+               <strong>Published:</strong> February 11, 2003 by Crown Publishing</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Devil-White-City-Changed-America-ebook/dp/B000FC0ZIA/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Devil-White-City-Madness-Changed/dp/0375725601" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="readyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready Player One</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: Ernest Cline</strong></p>
+            <p>In the year 2044, reality is an ugly place. The only time teenage Wade Watts really feels alive is when he's jacked into the virtual utopia known as the OASIS. Wade's devoted his life to studying the puzzles hidden within this world's digital confines—puzzles that are based on their creator's obsession with the pop culture of decades past and that promise massive power and fortune to whoever can unlock them.
+
+            But when Wade stumbles upon the first clue, he finds himself beset by players willing to kill to take this ultimate prize. The race is on, and if Wade's going to survive, he'll have to win—and confront the real world he's always been so desperate to escape.</p>
+            <p><strong>Genre:</strong> Science Fiction<br>
+               <strong>Published:</strong> August 16, 2011 by Random House</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Ready-Player-One-Ernest-Cline-ebook/dp/B004J4WKUQ/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/0307887448" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="warModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">The War of the Worlds</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: H.G. Wells</strong></p>
+            <p>The War of the Worlds is a science fiction novel by English author H. G. Wells first serialised in 1897 in the UK by Pearson's Magazine and in the United States by Cosmopolitan magazine. The novel's first appearance in hardcover was in 1898 from publisher William Heinemann of London. Written between 1895 and 1897, it is one of the earliest stories that detail a conflict between mankind and an extraterrestrial race. The novel is the first-person narrative of both an unnamed protagonist in Surrey and of his younger brother in London as southern England is invaded by Martians. The novel is one of the most commented-on works in the science fiction canon.</p>
+            <p><strong>Genre:</strong> Science Fiction<br>
+               <strong>Published:</strong> December 1897 by William Heinemann</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/War-Worlds-H-G-Wells-ebook/dp/B0088Q0F5I/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/War-Worlds-H-G-Wells/dp/1546517529/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="fahrenheitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Fahrenheit 451</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: Ray Bradbury</strong></p>
+            <p>Fahrenheit 451 is a dystopian novel by American writer Ray Bradbury, published in 1953. It is regarded as one of his best works. The novel presents a future American society where books are outlawed and "firemen" burn any that are found. The book's tagline explains the title: "Fahrenheit 451 – the temperature at which book paper catches fire, and burns..."
+
+            The novel has been the subject of interpretations focusing on the historical role of book burning in suppressing dissenting ideas. In a 1956 radio interview, Bradbury stated that he wrote Fahrenheit 451 because of his concerns at the time (during the McCarthy era) about the threat of book burning in the United States. In later years, he described the book as a commentary on how mass media reduces interest in reading literature.</p>
+            <p><strong>Genre:</strong> Dystopian Fiction<br>
+               <strong>Published:</strong> October 1953 by Ballantine Books</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Fahrenheit-451-Novel-Ray-Bradbury-ebook/dp/B0064CPN7I/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Fahrenheit-451-Ray-Bradbury/dp/1451673310" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="1984Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">1984</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: George Orwell</strong></p>
+            <p>Nineteen Eighty-Four, often published as 1984, is a dystopian novel published in 1949 by English author George Orwell. The novel is set in Airstrip One (formerly known as Great Britain), a province of the superstate Oceania in a world of perpetual war, omnipresent government surveillance, and public manipulation. The superstate and its residents are dictated to by a political regime euphemistically named English Socialism, shortened to "Ingsoc" in Newspeak, the government's invented language. The superstate is under the control of the privileged elite of the Inner Party, a party and government that persecutes individualism and independent thinking as "thoughtcrime", which is enforced by the "Thought Police".</p>
+            <p><strong>Genre:</strong> Dystopian Fiction<br>
+               <strong>Published:</strong> June 8, 1949 by Secker & Warburg</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/1984-George-Orwell-ebook/dp/B003JTHWKU/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/1984-Signet-Classics-George-Orwell/dp/0451524934/ref=mt_mass_market_paperback?_encoding=UTF8&me=" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="roadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">The Road</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: Cormac McCarthy</strong></p>
+            <p>The Road is a 2006 novel by American writer Cormac McCarthy. It is a post-apocalyptic tale of a journey of a father and his young son over a period of several months, across a landscape blasted by an unspecified cataclysm that has destroyed most of civilization and, in the intervening years, almost all life on Earth. The novel was awarded the 2007 Pulitzer Prize for Fiction and the James Tait Black Memorial Prize for Fiction in 2006. The book was adapted to a film of the same name in 2009, directed by John Hillcoat.</p>
+            <p><strong>Genre:</strong> Post-Apocalyptic Fiction<br>
+               <strong>Published:</strong> September 26, 2006 by Alfred A. Knopf</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Road-Vintage-International-Cormac-McCarthy-ebook/dp/B000OI0G1Q/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Road-Cormac-McCarthy/dp/0307387895/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="countModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">The Count of Monte Cristo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: Alexandre Dumas</strong></p>
+            <p>With an Introduction and Notes by Keith Wren, University of Kent at Canterbury The story of Edmund Dantes, self-styled Count of Monte Cristo, is told with consummate skill. The victim of a miscarriage of justice, Dantes is fired by a desire for retribution and empowered by a stroke of providence. In his campaign of vengeance, he becomes an anonymous agent of fate. The sensational narrative of intrigue, betrayal, escape, and triumphant revenge moves at a cracking pace. Dumas' novel presents a powerful conflict between good and evil embodied in an epic saga of rich diversity that is complicated by the hero's ultimate discomfort with the hubristic implication of his own actions.</p>
+            <p><strong>Genre:</strong> Adventure<br>
+               <strong>Published:</strong> 1845</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Count-Monte-Cristo-Alexandre-Dumas-ebook/dp/B01FPJST30/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Count-Monte-Cristo-Wordsworth-Classics/dp/1853267333/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-lg" id="slaughterhouseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Slaughterhouse-Five</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>By: Kurt Vonnegut</strong></p>
+            <p>Slaughterhouse-Five, or The Children's Crusade: A Duty-Dance with Death (1969) is a satirical novel by Kurt Vonnegut about the World War II experiences and journeys through time of Billy Pilgrim, from his time as an American soldier and chaplain's assistant, to postwar and early years. It is generally recognized as Vonnegut's most influential and popular work. A central event is Pilgrim's surviving the Allies' firebombing of Dresden as a prisoner-of-war. This was an event in Vonnegut's own life, and the novel is considered semi-autobiographical.</p>
+            <p><strong>Genre:</strong> Satire<br>
+               <strong>Published:</strong> March 1969 by Dell Publishing</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://www.amazon.com/Slaughterhouse-Five-Kurt-Vonnegut-ebook/dp/B003XVYLDU/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button" href="">Kindle eBook</button></a>
+            <a href="https://www.amazon.com/Slaughterhouse-Five-Novel-Modern-Library-Novels/dp/0385333846/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><button class="btn modal-button">Amazon</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="submitModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">RSVP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Thanks for letting us know!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="voteModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <p>Thanks for voting!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- End Modal List -->
+    <!-- api key: AIzaSyAotwVe9YA7Gz7JUuA5yNR1FBs0RFcjJRw -->
+
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAotwVe9YA7Gz7JUuA5yNR1FBs0RFcjJRw">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  </body>
+</html>
