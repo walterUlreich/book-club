@@ -33,7 +33,7 @@ app.post('/login-user', function(req, res, next){
 })
 
 
-var server = app.listen(80)
+var server = app.listen(8080)
 
 var io = require('socket.io')
 

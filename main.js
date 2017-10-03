@@ -476,8 +476,8 @@ var myRouter = new VueRouter({
 var mainVm = new Vue({
     el: '#app',
     data: {
-      userName: '',
-      userPassword: '',
+      userName: 'walter',
+      userPassword: 'dragons',
       user: {},
       roadVotes: 6,
       cristoVotes: 3,
