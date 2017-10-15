@@ -140,7 +140,7 @@ var myRouter = new VueRouter({
                 <div class="col-md-9 text-center">
                   <h1 class="title">Book of the Month:</h1><hr id="monthHR"><br>
                   <div class="thumbnail">
-                    <img src="https://www.chipublib.org/wp-content/uploads/sites/3/2015/01/kccover.png" alt="San Francisco" height="500">
+                    <img src="chabon.png" alt="The Amazing Adventures of Kavalier and Clay" height="500">
                     <p><strong>The Amazing Adventures of Kavalier and Clay</strong></p>
                     <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#adventuresModal">Book Details</a>
                   </div>
@@ -150,7 +150,7 @@ var myRouter = new VueRouter({
               <h2 class="title text-center" id="author">Michael Chabon</h2><hr id="authorHR">
               <div class="row">
                 <div class="col-md-6 text-center">
-                    <img src="http://www.trbimg.com/img-5835f29a/turbine/la-ca-jc-michael-chabon-moonglow-20161118" height="300" width="500">
+                    <img src="author.jpg" height="300" width="500" alt="Michael Chabon">
                 </div>
                 <div class="col-md-6">
                   <p id="bio">Michael Chabon (/ˈʃeɪbɒn/ SHAY-bon; born May 24, 1963) is an American novelist, short story writer, and Pulitzer Prize winner.
@@ -185,13 +185,13 @@ var myRouter = new VueRouter({
               </div>
               <div class="col-md-3 text-center">
                 <div class="thumbnail">
-                  <img src="https://disneynerd242.files.wordpress.com/2012/12/hobbit-cover-688x1024.jpg" alt="Paris" height="250">
+                  <img src="hobbit.jpg" alt="The Hobbit" height="250">
                   <p><strong>The Hobbit</strong></p>
                   <p>J.R.R. Tolkien</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#hobbitModal">Book Details</a>
                 </div>
                 <div class="thumbnail">
-                  <img src="https://i.pinimg.com/736x/00/4b/c0/004bc03ab3504c8d7a17994450d208ff--tripod-fiction-movies.jpg" alt="Paris" height="250">
+                  <img src="hgwells.jpg" alt="The War of the Worlds" height="250">
                   <p><strong>The War of the Worlds</strong></p>
                   <p>H.G. Wells</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#warModal">Book Details</a>
@@ -199,13 +199,13 @@ var myRouter = new VueRouter({
               </div>
               <div class="col-md-3 text-center">
                 <div class="thumbnail">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/DWCity.jpg" alt="New York" height="250">
+                  <img src="whitecity.jpg" alt="The Devil in the White City" height="250">
                   <p><strong>The Devil in the White City</strong></p>
                   <p>Erik Larson</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#devilModal">Book Details</a>
                 </div>
                 <div class="thumbnail">
-                  <img src="http://d28hgpri8am2if.cloudfront.net/book_images/cvr9781451673265_9781451673265_hr.jpg" alt="Paris" height="250">
+                  <img src="bradbury.jpg" alt="Fahrenheit 451" height="250">
                   <p><strong>Fahrenheit 451</strong></p>
                   <p>Ray Bradbury</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#fahrenheitModal">Book Details</a>
@@ -213,13 +213,13 @@ var myRouter = new VueRouter({
               </div>
               <div class="col-md-3 text-center">
                 <div class="thumbnail">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg" alt="San Francisco" height="250">
+                  <img src="playerone.jpg" alt="Ready Player One" height="250">
                   <p><strong>Ready Player One</strong></p>
                   <p>Ernest Cline</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#readyModal">Book Details</a>
                 </div>
                 <div class="thumbnail">
-                  <img src="http://booksat.scarlettrugers.com/bookcoverdesign/wp-content/uploads/2013/10/1984-book-cover.jpeg" alt="Paris" height="250">
+                  <img src="1984.jpg" alt="1984" height="250">
                   <p><strong>1984</strong></p>
                   <p>George Orwell</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#1984Modal">Book Details</a>
@@ -246,7 +246,7 @@ var myRouter = new VueRouter({
               </div>
               <div class="col-md-3 text-center">
                 <div class="thumbnail">
-                  <img src="https://dboyle93.files.wordpress.com/2014/05/the_road_oprahs_book_club-large.jpg" alt="Paris" height="250">
+                  <img src="theroad.jpg" alt="The Road" height="250">
                   <p><strong>The Road</strong></p>
                   <p>Cormac McCarthy</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#roadModal">Book Details</a>
@@ -258,7 +258,7 @@ var myRouter = new VueRouter({
               </div>
               <div class="col-md-3 text-center">
                 <div class="thumbnail">
-                  <img src="https://images.gr-assets.com/books/1309203605l/7126.jpg" alt="New York" height="250">
+                  <img src="montecristo.jpg" alt="The Count of Monte Cristo" height="250">
                   <p><strong>The Count of Monte Cristo</strong></p>
                   <p>Alexandre Dumas</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#countModal">Book Details</a>
@@ -270,7 +270,7 @@ var myRouter = new VueRouter({
               </div>
               <div class="col-md-3 text-center">
                 <div class="thumbnail">
-                  <img src="http://bookcoverarchive.com/wp-content/uploads/amazon/slaughterhousefive.jpg" alt="San Francisco" height="250">
+                  <img src="slaughterhouse.jpg" alt="Slaughterhouse-Five" height="250">
                   <p><strong>Slaughterhouse-Five</strong></p>
                   <p>Kurt Vonnegut</p>
                   <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#slaughterhouseModal">Book Details</a>
